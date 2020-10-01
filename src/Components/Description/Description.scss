@@ -1,0 +1,26 @@
+.description {
+  background-color: #fff;
+  max-width: 40rem;
+  margin: 1rem auto;
+  border-top: 1px solid #dee1e6;
+  border-bottom: 1px solid #dee1e6;
+
+  &__title {
+    padding: 20px 0 15px;
+    border-bottom: 1px solid #dee1e6;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__text {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+
+    .description--strong {
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+}

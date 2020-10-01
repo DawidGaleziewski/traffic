@@ -1,0 +1,89 @@
+// Carousel section
+.carousel-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+  max-width: 40rem;
+  margin: 15px auto 0 auto;
+  border-bottom: 1px solid #dee1e6;
+  background-color: #000;
+  z-index: 2;
+
+  &__header {
+    border: none;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  .carousel-item__caption {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  // Arrows style
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    position: absolute;
+
+    top: 50%;
+    background-image: url('../../assets/arrow-right.svg');
+    background-color: hsla(0, 0%, 100%, 0.5);
+    height: 67px;
+    width: 41px;
+    border-radius: 3px 0 0 3px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    border: 1px solid #dee1e6;
+  }
+
+  .carousel-control-next-icon {
+    right: 0;
+    border-right: none;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev-icon {
+    left: 0;
+    border-left: none;
+    transform: rotate(180deg) translateY(50%);
+  }
+
+  // Arrows however on carousel
+  &:hover .carousel-control-prev-icon,
+  &:hover .carousel-control-next-icon {
+    opacity: 1;
+  }
+
+  // Single arrow however
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-image: url('../../assets/arrow-hover.svg');
+    background-color: #fff;
+    box-shadow: -3px 0 3px rgba(0, 0, 0, 0.3);
+  }
+
+  // Carousel indicators
+  .carousel-indicators {
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: hsla(0, 0%, 100%, 0.5);
+      border: 1px solid #999;
+      transition: all 0.2s ease-in;
+    }
+
+    li.active {
+      background: #fc7c41;
+      transform: scale(1.6);
+    }
+  }
+
+  .img--not-found {
+    width: 100%;
+    height: 500px;
+  }
+}

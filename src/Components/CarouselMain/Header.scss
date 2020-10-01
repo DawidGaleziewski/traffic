@@ -1,0 +1,29 @@
+.carousel-main__header {
+  position: relative;
+  padding: 0 2rem;
+  height: 100%;
+  background: #fff;
+  border-top: 1px solid #dee1e6;
+
+  .btn-close-carousel {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0.1rem;
+
+    span {
+      font-size: 2rem;
+      vertical-align: bottom;
+    }
+  }
+  .carousel-main__title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

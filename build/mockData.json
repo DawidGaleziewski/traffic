@@ -1,0 +1,9 @@
+{
+  "regions": [
+    {
+      "id": 1,
+      "trafficQuota": 9,
+      "region": "PL-DS"
+    }
+  ]
+}

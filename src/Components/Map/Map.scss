@@ -1,0 +1,46 @@
+.map-section {
+  width: 100%;
+  padding-top: 100%; /* Keeps the aspect ratio for the svg image box model */
+  position: relative;
+  margin: 0 auto;
+  max-width: 40rem;
+  background-color: #fff;
+  border-top: 1px solid #dee1e6;
+  border-bottom: 1px solid #dee1e6;
+}
+@media screen and (min-width: 40rem) {
+  .map-section {
+    padding-top: 40rem;
+  }
+}
+.map-svg {
+  position: absolute;
+  width: 100%; /* Keeps svg responsive in relation to its container*/
+  left: 0;
+  top: 0;
+}
+
+.land {
+  cursor: pointer;
+  fill: #cccccc;
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+}
+
+.land__label {
+  // top: 0;
+  // left: 0;
+  // position: absolute;
+  // z-index: 10;
+  background-color: red;
+}
+
+.land:hover {
+  fill: #000;
+}
+
+.land-toggled {
+  fill: #3545e6;
+}

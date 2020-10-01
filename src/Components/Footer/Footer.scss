@@ -1,0 +1,24 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__nav.navbar.navbar-dark {
+  background-color: #000;
+  color: inherit;
+
+  .nav__link,
+  .dropdown-toggle {
+    color: inherit;
+
+    .dropdown-menu {
+      background-color: #000;
+      color: inherit;
+    }
+    .dropdown-item {
+      background-color: #000;
+      color: inherit;
+      text-transform: capitalize;
+    }
+  }
+}
